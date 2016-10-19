@@ -10,3 +10,7 @@
  * Jeremy Novak
  * Kyle Drum
  * Tyler Wians
+ 
+ ---
+ 
+ The starter code for this project was provided by Professor Leon Tabak. 
