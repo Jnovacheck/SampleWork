@@ -1,6 +1,5 @@
 package guiEmailSender;
 
-import java.io.*;
 import java.net.*;
 import java.util.*;
 
@@ -38,7 +37,7 @@ public class Envelope {
 
 	/* Take the name of the local mailserver and map it into an
 	 * InetAddress */
-	DestHost = localServer;
+		DestHost = localServer;
 	try {
 	    DestAddr = InetAddress.getByName(DestHost);
 	} catch (UnknownHostException e) {
