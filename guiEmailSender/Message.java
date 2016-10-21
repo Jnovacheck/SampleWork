@@ -42,16 +42,26 @@ public class Message {
     }
 
     /* Two functions to access the sender and recipient. */
+    /**
+     * @return The email address that the email is coming from
+     */
     public String getFrom() {
 	return From;
     }
 
+    /**
+     * 
+     * @return The email address that the email is being sent to
+     */
     public String getTo() {
 	return To;
     }
 
-    /* Check whether the message is valid. In other words, check that
-       both sender and recipient contain only one @-sign. */
+    /**
+     * Check whether the message is valid. In other words, check that both sender and recipient contain only one @-sign. 
+     * 
+     * @return A boolean that tells if the message contains two valid emails.
+     */
     public boolean isValid() {
 	int fromat = From.indexOf('@');
 	int toat = To.indexOf('@');
@@ -75,7 +85,9 @@ public class Message {
 	return true;
     }
     
-    /* For printing the message. */
+    /**
+     *  For printing the message. 
+     */
     public String toString() {
 	String res;
 

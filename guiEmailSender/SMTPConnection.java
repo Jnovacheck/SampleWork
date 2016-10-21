@@ -9,7 +9,8 @@ import java.net.Socket;
 /**
  * Open an SMTP connection to a mailserver and send one mail.
  *
- * @author Jeremy Novak
+ * @author Jeremy Novak, Starter code created by Jussi Kangasharju (see README for more details)
+ * @version October 2016
  */
 public class SMTPConnection {
 	/* The socket to the server */
@@ -68,9 +69,9 @@ public class SMTPConnection {
 	 * Send the message. Write the correct SMTP-commands in the correct order.
 	 * No checking for errors, just throw them to the caller
 	 * 
-	 * @param evelope:
+	 * @param envelope
 	 *            the details of the message, as well as it's header details
-	 * @return void
+	 * @throws IOException Throws an exception if the reply form the server is not the expected reply code
 	 */
 	public void send(Envelope envelope) throws IOException {
 		sendCommand("MAIL FROM: <" + envelope.Sender + ">" + NL, MAILFROM);
@@ -83,6 +84,7 @@ public class SMTPConnection {
 	/**
 	 * Close the connection. First, terminate on SMTP level, then close the
 	 * socket.
+	 * 
 	 */
 	public void close() {
 		isConnected = false;
@@ -104,7 +106,7 @@ public class SMTPConnection {
 	 * @param rc
 	 *            A sting that represents the expected Reply Code from the
 	 *            Socket
-	 * @return void
+	 * @throws IOException Throws an exception if the reply form the server is not the expected reply code
 	 */
 	private void sendCommand(String command, String rc) throws IOException {
 		/* Write command to server and read reply from server. */
@@ -126,7 +128,6 @@ public class SMTPConnection {
 	/**
 	 * Destructor. Closes the connection if something bad happens.
 	 * 
-	 * @return void
 	 * 
 	 */
 	protected void finalize() throws Throwable {

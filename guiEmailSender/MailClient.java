@@ -81,11 +81,19 @@ public class MailClient extends Frame {
 		// show();
 	}
 
-	static public void main(String argv[]) {
+	/**
+	 * Main method used to run the code
+	 * 
+	 * @param argv not used
+	 */
+	public static void main(String argv[]) {
 		new MailClient();
 	}
 
-	/* Handler for the Send-button. */
+	/**
+	 * ActionListener for the send button.
+	 * Handler for the Send-button. 
+	 */
 	class SendListener implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 			System.out.println("Sending mail");
@@ -147,7 +155,10 @@ public class MailClient extends Frame {
 		}
 	}
 
-	/* Clear the fields on the GUI. */
+	/**
+	 *  ActionListener for the Clear button
+	 *  Clear the fields on the GUI. 
+	 */
 	class ClearListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
 			System.out.println("Clearing fields");
@@ -158,7 +169,10 @@ public class MailClient extends Frame {
 		}
 	}
 
-	/* Quit. */
+	/**
+	 *  ActionListener for the Quit Button
+	 *  Quit. 
+	 */
 	class QuitListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
 			System.exit(0);

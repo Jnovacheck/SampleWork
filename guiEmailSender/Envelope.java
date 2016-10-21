@@ -48,8 +48,11 @@ public class Envelope {
 	return;
     }
 
-    /* Escape the message by doubling all periods at the beginning of
-       a line. */
+    /**
+     * Escape the message by doubling all periods at the beginning of a line. 
+     * @param message The body of the email being sent
+     * @return The message without any escape characters, for this application a single period on a single line 
+     */
     private Message escapeMessage(Message message) {
 	String escapedBody = "";
 	String token;
@@ -66,7 +69,9 @@ public class Envelope {
 	return message;
     }
 
-    /* For printing the envelope. Only for debug. */
+    /**
+     * For printing the envelope. Only for debug. 
+     */
     public String toString() {
 	String res = "Sender: " + Sender + '\n';
 	res += "Recipient: " + Recipient + '\n';
