@@ -10,6 +10,7 @@ import java.net.Socket;
  * Open an SMTP connection to a mailserver and send one mail.
  *
  * @author Jeremy Novak
+ * starter can be found at http://www.csc.villanova.edu/~schragge/CSC8560/mailagentprogram.html
  */
 public class SMTPConnection {
 	/* The socket to the server */
