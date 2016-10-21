@@ -19,4 +19,4 @@
  
 ---
  
- The starter code for this project was provided by Professor Leon Tabak, and parts of _guiEmailSender_ were writen entirly or in part by Jussi Kangasharju. 
+ The starter code for this project was provided by Professor Leon Tabak, and starter code for the _guiEmailSender_ were created by Jussi Kangasharju. Starter code for _guiEmailSender_ can be found here [http://www.csc.villanova.edu/~schragge/CSC8560/mailagentprogram.html](http://www.csc.villanova.edu/~schragge/CSC8560/mailagentprogram.html)
