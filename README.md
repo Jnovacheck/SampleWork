@@ -8,9 +8,10 @@
  1. Open a Terminal window
  2. Enter the command _nslookup -Type=mx YourWebsidteName_ 
    * Replace _YourWebsiteName_ with the name of a website with an internal mailserver, such as google.com
- 3. Find the one of the mail exchangers, and copy one of the exchangers to use 
-
-To use the Javadoc for the _guiEmailSender_ open the _doc_ folder and open the file _index.html_. You can then use a web browser to view the contenst of the Javadoc
+ 3. Find the one of the mail exchangers, and copy one of the exchangers to use
+ 
+ To use the Javadoc for the _guiEmailSender_ open the _doc_ folder and open the file _index.html_. You can then use a web browser to view the contenst of the Javadoc
+ 
 ---
  
  The program _EmailSender_ was worked on by:
